@@ -1,0 +1,247 @@
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #222;
+  font-weight: 200;
+}
+
+img {
+  width: 200px;
+}
+
+header {
+  padding: 16px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 150px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+header ul a {
+  padding: 8px;
+  display: block;
+}
+
+.hero-section {
+  height: 90vh;
+  background-image: url("/images/landing.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text-container {
+  color: #fff;
+  text-align: center;
+}
+
+.hero-section .hero-section-text-container h1 {
+  font-size: 72px;
+  margin-bottom: 32px;
+}
+
+.hero-section .hero-section-text-container h3 {
+  font-weight: 200;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.whats-on {
+  padding: 64px 0;
+  margin: 0 auto;
+}
+
+.whats-on h2 {
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.whats-on h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #00B172;
+}
+
+.whats-on .whats-on-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 72px auto 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.whats-on .whats-on-container .whats-on-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 300px;
+  max-width: 250px;
+}
+
+.whats-on .whats-on-container .whats-on-cards img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.whats-on .whats-on-container .whats-on-cards h4 {
+  color: #00B172;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.whats-on .whats-on-container .whats-on-cards p {
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.kanye {
+  background-color: #00B172;
+  padding: 34px;
+  border: 48px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #fff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.kanye .kanye-logo-spotify {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.kanye .spotify-app {
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+}
+
+.kanye .kanye--infos {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.kanye .kanye--infos h5 {
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.kanye .kanye--infos h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.kanye .kanye--infos h4 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.kanye .kanye--infos p {
+  max-width: 34ch;
+}
+/*# sourceMappingURL=own-styles.css.map */
